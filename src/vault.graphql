@@ -1,0 +1,18 @@
+query VaultDetails($id: ID!) {
+  vault(id: $id) {
+    id
+    name
+    trackedAssets {
+      id
+      name
+      decimals
+      symbol
+    }
+    release {
+      id
+    }
+    comptroller {
+      id
+    }
+  }
+}
